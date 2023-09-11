@@ -25,60 +25,77 @@
   <div class="container mt-5">
     <p>
     <h1>Technology Evolution: From Apollo 11 to iPhone X</h1>
-    <p>The advancement in technology over the past decades is nothing short of extraordinary.</p>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <h2>Technology Comparison Tool</h2>
+        <form id="tech-comparison">
+          <label for="device">Select a device:</label>
+          <select id="device" name="device">
+            <option value="smartphone">Smartphone</option>
+            <option value="laptop">Laptop</option>
+            <!-- Additional devices here -->
+          </select>
 
-    <h2>Technology Comparison Tool</h2>
-    <form id="tech-comparison">
-      <label for="device">Select a device:</label>
-      <select id="device" name="device">
-        <option value="smartphone">Smartphone</option>
-        <option value="laptop">Laptop</option>
-        <!-- Additional devices here -->
-      </select>
-
-      <input type="button" value="Compare" onclick="compareTech()">
-    </form>
-    <p id="comparison-result"></p>
-
-      <h2>Introduction</h2>
-      <p>The pace at which technology has evolved over the past few decades is nothing short of mind-blowing. To truly grasp the magnitude of this advancement, one only needs to compare two iconic milestones in human technology: Apollo 11, the spacecraft that landed the first humans on the moon, and the iPhone X, a pocket-sized device with capabilities that were unimaginable just a few decades ago.</p>
-      
-      <div class="container">
-        <div class="row">
-            <!-- Apollo 11 Column -->
-            <div class="col-md-6">
-              <h2>Apollo 11: The Giant Leap for Mankind</h2>
-              <p>Launched on July 16, 1969, Apollo 11 was the spaceflight that first landed humans on the Moon. Neil Armstrong, Buzz Aldrin, and Michael Collins were the astronauts who made this historic journey. The spacecraft was a marvel of its time, embodying the pinnacle of human engineering and computational capabilities.</p>
-                <h4>Technology Specs of Apollo 11</h4>
-                <ul>
-                    <li><strong>Processor:</strong> Apollo Guidance Computer with a processing speed of about 1.024 MHz</li>
-                    <li><strong>Memory:</strong> 2048 words of erasable magnetic core memory and 36,864 words of read-only core rope memory</li>
-                    <li><strong>User Interface:</strong> DSKY (Display and Keyboard), a block of keys and a simple numeric display</li>
-                    <li><strong>Software:</strong> Written in AGC4 assembler language, the software had to be woven into the core rope memory by hand.</li>
-                </ul>
-            </div>
-    
-            <!-- iPhone X Column -->
-            <div class="col-md-6">
-                <h2>iPhone X: The Pocket Marvel</h2>
-                <p>Released on November 3, 2017, the iPhone X marked the 10th anniversary of Apple's iPhone series. This smartphone was a quantum leap in terms of processing power, display technology, and user interface compared to its predecessors.</p>
-    
-                <h4>Technology Specs</h4>
-                <ul>
-                    <li><strong>Processor:</strong> A11 Bionic chip with 64-bit architecture, with a maximum clock speed of 2.39 GHz</li>
-                    <li><strong>Memory:</strong> Comes in 64 GB and 256 GB storage options, with 3 GB of RAM</li>
-                    <li><strong>User Interface:</strong> Bezel-less OLED display, Face ID, and intuitive gesture controls</li>
-                    <li><strong>Software:</strong> Runs on iOS, with millions of apps available on the App Store</li>
-                </ul>
-            </div>
-        </div>
+          <input type="button" value="Compare" onclick="compareTech()">
+        </form>
+        <p id="comparison-result"></p>
+      </div>
     </div>
-    
-      
-      <h2>Conclusion: A Perspective on Progress</h2>
-      <p>The comparison between Apollo 11 and the iPhone X serves as a tangible reminder of how far we've come in the field of technology. While Apollo 11 was an enormous achievement that required the collective intelligence and resources of an entire nation, today's technological marvels fit right into our pockets.</p>
-  
-      <p>The advancements in technology have not only reshaped the gadgets we use but also transformed how we communicate, work, and even think. As we look forward to the future, one can only imagine what groundbreaking innovations await us.</p>
+
+    <p>The pace at which technology has evolved over the past few decades is nothing short of mind-blowing. To truly
+      grasp the magnitude of this advancement, one only needs to compare two iconic milestones in human technology:
+      Apollo 11, the spacecraft that landed the first humans on the moon, and the iPhone X, a pocket-sized device with
+      capabilities that were unimaginable just a few decades ago.</p>
+
+    <div class="container">
+      <div class="row">
+        <!-- Apollo 11 Column -->
+        <div class="col-md-6">
+          <h2>Apollo 11: The Giant Leap for Mankind</h2>
+          <p>Launched on July 16, 1969, Apollo 11 was the spaceflight that first landed humans on the Moon. Neil
+            Armstrong, Buzz Aldrin, and Michael Collins were the astronauts who made this historic journey. The
+            spacecraft was a marvel of its time, embodying the pinnacle of human engineering and computational
+            capabilities.</p>
+          <h4>Technology Specs of Apollo 11</h4>
+          <ul>
+            <li><strong>Processor:</strong> Apollo Guidance Computer with a processing speed of about 1.024 MHz</li>
+            <li><strong>Memory:</strong> 2048 words of erasable magnetic core memory and 36,864 words of read-only core
+              rope memory</li>
+            <li><strong>User Interface:</strong> DSKY (Display and Keyboard), a block of keys and a simple numeric
+              display</li>
+            <li><strong>Software:</strong> Written in AGC4 assembler language, the software had to be woven into the
+              core rope memory by hand.</li>
+          </ul>
+        </div>
+
+        <!-- iPhone X Column -->
+        <div class="col-md-6">
+          <h2>iPhone X: The Pocket Marvel</h2>
+          <p>Released on November 3, 2017, the iPhone X marked the 10th anniversary of Apple's iPhone series. This
+            smartphone was a quantum leap in terms of processing power, display technology, and user interface compared
+            to its predecessors.</p>
+
+          <h4>Technology Specs</h4>
+          <ul>
+            <li><strong>Processor:</strong> A11 Bionic chip with 64-bit architecture, with a maximum clock speed of 2.39
+              GHz</li>
+            <li><strong>Memory:</strong> Comes in 64 GB and 256 GB storage options, with 3 GB of RAM</li>
+            <li><strong>User Interface:</strong> Bezel-less OLED display, Face ID, and intuitive gesture controls</li>
+            <li><strong>Software:</strong> Runs on iOS, with millions of apps available on the App Store</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <h2>A Perspective on Progress</h2>
+    <p>The comparison between Apollo 11 and the iPhone X serves as a tangible reminder of how far we've come in the
+      field of technology. While Apollo 11 was an enormous achievement that required the collective intelligence and
+      resources of an entire nation, today's technological marvels fit right into our pockets.</p>
+
+    <p>The advancements in technology have not only reshaped the gadgets we use but also transformed how we communicate,
+      work, and even think. As we look forward to the future, one can only imagine what groundbreaking innovations await
+      us.</p>
 
     <script>
       function compareTech() {
