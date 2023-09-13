@@ -39,8 +39,8 @@
                   <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
                     <li><a class="dropdown-item" href="#" onclick="loadModule('module1')">1. Overview</a></li>
                     <li><a class="dropdown-item" href="#" onclick="loadModule('module2')">2. Graphs and Data</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="loadModule('module3')">Module 3</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="loadModule('module4')">Module 4</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="loadModule('module3')">3. Tableau</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="loadModule('module4')">4. Process</a></li>
                   </ul>
                 </li>
                 <!-- Placeholder for dynamic links -->
@@ -61,7 +61,7 @@
         <h1>Welcome to PREP-KC</h1>
         <h2>NC3 Trane Supplementary Curriculum</h2>
         <p>Data do, what data does</p>
-        <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+        <a href="about.html" class="btn btn-primary btn-lg">Learn More</a>
     </div>
 </section>
 
@@ -143,9 +143,12 @@
               break;
             case 'module2':
               links = `
-                <li class="nav-item"><a class="nav-link" href="#">Link 2.1</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Link 2.2</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Link 2.3</a></li>
+                <li class="nav-item"><a class="nav-link" href="Module2/Comprehensive_Guide_to_Understanding_Graphs.html">Comprehensive Guide to Understanding Graphs</a></li>
+                <li class="nav-item"><a class="nav-link" href="Module2/Understanding_Missing_Data_and_Zero_Values_in_Datasets.html">Missing Data and Zero Values</a></li>
+                <li class="nav-item"><a class="nav-link" href="Module2/The_Scale_of_Data__From_Bytes_to_Zettabytes.html">Scale of Data</a></li>
+                <li class="nav-item"><a class="nav-link" href="Module2/Dealing_with_Anomalies_in_Data.html">Data Anomalies</a></li>
+                <li class="nav-item"><a class="nav-link" href="Module2/The_Importance_of_Data_Quality_in_Analytics.html">Data Analytics</a></li>
+                <li class="nav-item"><a class="nav-link" href="Module2/The_Trade-off_Between_Data_Accuracy_and_Speed.html">Trade-Off</a></li>
               `;
               break;
             case 'module3':
@@ -165,6 +168,9 @@
     
           dynamicLinks.innerHTML = links;
         }
+        document.addEventListener("DOMContentLoaded", function() {
+            loadModule('module1');
+        });
       </script>
 </body>
 
