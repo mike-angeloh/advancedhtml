@@ -1,150 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Data Analysis Through the Ages</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Custom CSS to make h3 tags smaller */
-    h3 {
-      font-size: 1.2rem;
-    }
-    #result {
+  <head>
+    <meta charset="UTF-8" />
+    <title>Data Analysis Through the Ages</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      /* Custom CSS to make h3 tags smaller */
+      h3 {
+        font-size: 1.2rem;
+      }
+      #result {
         font-size: 2rem;
         font-weight: bold;
-    }
-  </style>
-</head>
+      }
+    </style>
+  </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Data in History</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="florence_nightingale.html">Florence Nightingale</a></li>
-        <li class="nav-item"><a class="nav-link" href="modern_data_collection.html">Modern Data Collection</a></li>
-        <li class="nav-item"><a class="nav-link" href="early_analysis.html">Role of Early Analysis</a></li>
-        <li class="nav-item"><a class="nav-link" href="skills_for_analysts.html">Skills for Analysts</a></li>
-        <li class="nav-item"><a class="nav-link" href="charles_minard.html">Charles Minard</a></li>
-        <li class="nav-item"><a class="nav-link" href="big_data.html">Big Data</a></li>
-        <li class="nav-item"><a class="nav-link" href="technology_evolution.html">Technology Evolution</a></li>
-        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container mt-5">
-    <h1 class="text-center">Ever Wondered How Society Made Sense of Data Before the Age of Computers?</h1>
-    <hr>
-
-    <!-- Introduction -->
-    <section>
-      <h2>Introduction</h2>
-      <p>In today's world, we are spoiled with a plethora of advanced software and computing power that help us sort,
-        analyze, and interpret vast amounts of data. From machine learning algorithms to big data analytics, the tools
-        at our disposal are incomparably sophisticated. But have you ever stopped to wonder how society made sense of
-        data before the digital age? Here's a brief journey through time to explore how people navigated the realm of
-        data in the past.</p>
-    </section>
-    <hr>
-
-    <!-- 1800s: The Age of Basic Tools -->
-    <section>
-      <h2>1800s: The Age of Basic Tools</h2>
-      <h3>Hand-Drawn Graphs</h3>
-      <p>Long before the invention of electronic spreadsheets, people relied on hand-drawn graphs to visualize data.
-        William Playfair, a Scottish engineer and political economist, is credited with inventing various types of
-        graphs like the line graph, bar chart, and pie chart in the late 18th century.</p>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="playfair.png" alt="William Playfair" class="img-fluid">
-        </div>
-        <div class="col-md-6">
-          <img src="piechart.png" alt="Pie Chart" class="img-fluid">
-        </div>
+  <body>
+    <!-- Header -->
+    <header id="header" class="bg-primary text-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="#">Data Science</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="moduleDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Modules
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module1')"
+                      >1. Overview</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module2')"
+                      >2. Graphs and Data</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module3')"
+                      >3. Tableau</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module4')"
+                      >4. Process</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Placeholder for dynamic links -->
+              <div id="dynamicLinks"></div>
+            </ul>
+          </div>
+        </nav>
       </div>
+    </header>
+    <div class="container mt-5">
+      <h1 class="text-center">
+        Ever Wondered How Society Made Sense of Data Before the Age of
+        Computers?
+      </h1>
+      <hr />
+      <!-- Introduction -->
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          In today's world, we are spoiled with a plethora of advanced software
+          and computing power that help us sort, analyze, and interpret vast
+          amounts of data. From machine learning algorithms to big data
+          analytics, the tools at our disposal are incomparably sophisticated.
+          But have you ever stopped to wonder how society made sense of data
+          before the digital age? Here's a brief journey through time to explore
+          how people navigated the realm of data in the past.
+        </p>
+      </section>
+      <hr />
 
-      <h3>The Birth of Averages</h3>
-      <p>The concept of the "average" became a popular tool for summarizing data. Simple measures like mean, median, and
-        mode were the go-to metrics for understanding large datasets. These were especially useful in fields like
-        astronomy, where data points were collected manually through telescopic observations.</p>
+      <!-- 1800s: The Age of Basic Tools -->
+      <section>
+        <h2>1800s: The Age of Basic Tools</h2>
+        <h3>Hand-Drawn Graphs</h3>
+        <p>
+          Long before the invention of electronic spreadsheets, people relied on
+          hand-drawn graphs to visualize data. William Playfair, a Scottish
+          engineer and political economist, is credited with inventing various
+          types of graphs like the line graph, bar chart, and pie chart in the
+          late 18th century.
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="playfair.png" alt="William Playfair" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <img src="piechart.png" alt="Pie Chart" class="img-fluid" />
+          </div>
+        </div>
 
-      <h3>Census Taking</h3>
-      <p>Governments started to realize the importance of data for governance and began conducting censuses. The data
-        collected was usually tabulated manually and used to make informed decisions about resource allocation.</p>
-        <center><img src="census.png" alt="Census" height="250px"></center>
-      <h3>Probability Theory</h3>
-      <p>The 19th century also saw significant developments in probability theory, spurred in part by interests in games
-        of chance. This laid the groundwork for more complex statistical analysis in the future.</p>
+        <h3>The Birth of Averages</h3>
+        <p>
+          The concept of the "average" became a popular tool for summarizing
+          data. Simple measures like mean, median, and mode were the go-to
+          metrics for understanding large datasets. These were especially useful
+          in fields like astronomy, where data points were collected manually
+          through telescopic observations.
+        </p>
+
+        <h3>Census Taking</h3>
+        <p>
+          Governments started to realize the importance of data for governance
+          and began conducting censuses. The data collected was usually
+          tabulated manually and used to make informed decisions about resource
+          allocation.
+        </p>
+        <center><img src="census.png" alt="Census" height="250px" /></center>
+        <h3>Probability Theory</h3>
+        <p>
+          The 19th century also saw significant developments in probability
+          theory, spurred in part by interests in games of chance. This laid the
+          groundwork for more complex statistical analysis in the future.
+        </p>
         <div class="container mt-5">
           <h1 class="text-center">Coin Toss Simulator</h1>
-          <hr>
-  
+          <hr />
+
           <div class="text-center">
-              <button class="btn btn-primary" onclick="tossCoin()">Toss Coin</button>
+            <button class="btn btn-primary" onclick="tossCoin()">
+              Toss Coin
+            </button>
           </div>
-          
+
           <div class="text-center mt-4">
-              <p id="result">Result will appear here</p>
+            <p id="result">Result will appear here</p>
           </div>
-  
+
           <div class="text-center mt-2">
-              <p>Heads Count: <span id="headsCount">0</span></p>
-              <p>Tails Count: <span id="tailsCount">0</span></p>
-              <p>Percentage of Heads: <span id="headsPercentage">0%</span></p>
+            <p>Heads Count: <span id="headsCount">0</span></p>
+            <p>Tails Count: <span id="tailsCount">0</span></p>
+            <p>Percentage of Heads: <span id="headsPercentage">0%</span></p>
           </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- 1900s: The Era of Statistical Theories -->
+      <section class="row">
+        <h2>1900s: The Era of Statistical Theories</h2>
+        <div class="card col-sm-4 m-2">
+          <div class="card-title">
+            <h3>Statistical Sampling</h3>
+          </div>
+          <div class="card-body">
+            With the rise of mass production and increased complexity in social
+          systems, it became impractical to collect data from every individual
+          item or person. Statistical sampling techniques, like random sampling,
+          became vital for making generalizations about larger populations.
+          </div>
+        </div>
+        <div class="card col-sm-4 m-2">
+          <div class="card-title">
+            <h3>Hypothesis Testing</h3>
+          </div>
+          <div class="card-body">
+          The early to mid-20th century saw the development of hypothesis
+          testing as a standard method for drawing conclusions from data. The
+          t-test, Chi-square test, and ANOVA became common statistical methods
+          used in research across various fields.
+            </div>
+          </div>
+          <div class="card col-sm-4 m-2">
+            <div class="card-title">
+            <h3>Multivariate Analysis</h3>
+            </div>
+            <div class="card-body">
+          As datasets became more complex, statistical theories expanded to
+          accommodate multiple variables. Techniques like regression analysis,
+          factor analysis, and principal component analysis became essential
+          tools in the statistician's toolbox.
+        </div>
       </div>
-    </section>
-    <hr>
+      <div class="card col-sm-4 m-2">
+        <div class="card-title">
+        <h3>Birth of Computational Statistics</h3>
+      </div>
+      <div class="card-body">
+          Though not yet in the age of personal computers, the latter half of
+          the 20th century witnessed the use of mainframe computers for more
+          complicated statistical calculations. This era set the stage for the
+          computational power that we take for granted today.
+        </div>
+      </div>
+      </section>
+      <hr />
 
-    <!-- 1900s: The Era of Statistical Theories -->
-    <section>
-      <h2>1900s: The Era of Statistical Theories</h2>
-      <h3>Statistical Sampling</h3>
-      <p>With the rise of mass production and increased complexity in social systems, it became impractical to collect
-        data from every individual item or person. Statistical sampling techniques, like random sampling, became vital
-        for making generalizations about larger populations.</p>
+      <!-- Conclusion -->
+      <section>
+        <h2>Conclusion</h2>
+        <p>
+          While we may have advanced computational tools at our fingertips
+          today, it's fascinating to see how far we've come from the rudimentary
+          methods of the past. The journey of data analysis is a testament to
+          human ingenuity and the relentless quest for understanding the world
+          through numbers.
+        </p>
+        <p>
+          So the next time you run a complex machine learning algorithm or
+          visualize data in a flashy dashboard, take a moment to appreciate the
+          centuries of statistical thought that laid the foundation for our
+          modern capabilities.
+        </p>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Initialize counters for heads and tails
+      let headsCount = 0;
+      let tailsCount = 0;
 
-      <h3>Hypothesis Testing</h3>
-      <p>The early to mid-20th century saw the development of hypothesis testing as a standard method for drawing
-        conclusions from data. The t-test, Chi-square test, and ANOVA became common statistical methods used in research
-        across various fields.</p>
-
-      <h3>Multivariate Analysis</h3>
-      <p>As datasets became more complex, statistical theories expanded to accommodate multiple variables. Techniques
-        like regression analysis, factor analysis, and principal component analysis became essential tools in the
-        statistician's toolbox.</p>
-
-      <h3>Birth of Computational Statistics</h3>
-      <p>Though not yet in the age of personal computers, the latter half of the 20th century witnessed the use of
-        mainframe computers for more complicated statistical calculations. This era set the stage for the computational
-        power that we take for granted today.</p>
-    </section>
-    <hr>
-
-    <!-- Conclusion -->
-    <section>
-      <h2>Conclusion</h2>
-      <p>While we may have advanced computational tools at our fingertips today, it's fascinating to see how far we've
-        come from the rudimentary methods of the past. The journey of data analysis is a testament to human ingenuity
-        and the relentless quest for understanding the world through numbers.</p>
-      <p>So the next time you run a complex machine learning algorithm or visualize data in a flashy dashboard, take a
-        moment to appreciate the centuries of statistical thought that laid the foundation for our modern capabilities.
-      </p>
-    </section>
-  </div>
-
-  <script>
-    // Initialize counters for heads and tails
-    let headsCount = 0;
-    let tailsCount = 0;
-
-    // Function to simulate coin toss
-    function tossCoin() {
-        const resultElement = document.getElementById('result');
-        const headsCountElement = document.getElementById('headsCount');
-        const tailsCountElement = document.getElementById('tailsCount');
-        const headsPercentageElement = document.getElementById('headsPercentage');
+      // Function to simulate coin toss
+      function tossCoin() {
+        const resultElement = document.getElementById("result");
+        const headsCountElement = document.getElementById("headsCount");
+        const tailsCountElement = document.getElementById("tailsCount");
+        const headsPercentageElement =
+          document.getElementById("headsPercentage");
 
         // Generate a random number between 0 and 1
         const randomNum = Math.random();
@@ -152,11 +268,11 @@
         // Determine the outcome
         let outcome;
         if (randomNum < 0.5) {
-            outcome = 'Heads';
-            headsCount++;
+          outcome = "Heads";
+          headsCount++;
         } else {
-            outcome = 'Tails';
-            tailsCount++;
+          outcome = "Tails";
+          tailsCount++;
         }
 
         // Calculate the percentage of Heads
@@ -168,7 +284,7 @@
         headsCountElement.textContent = headsCount;
         tailsCountElement.textContent = tailsCount;
         headsPercentageElement.textContent = `${headsPercentage}%`;
-    }
-</script>
-</body>
+      }
+    </script>
+  </body>
 </html>
