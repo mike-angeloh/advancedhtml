@@ -5,23 +5,38 @@
     <meta charset="UTF-8">
     <title>Data Science Careers: An Overview</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Data in History</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="florence_nightingale.html">Florence Nightingale</a></li>
-            <li class="nav-item"><a class="nav-link" href="modern_data_collection.html">Modern Data Collection</a></li>
-            <li class="nav-item"><a class="nav-link" href="early_analysis.html">Role of Early Analysis</a></li>
-            <li class="nav-item"><a class="nav-link" href="skills_for_analysts.html">Skills for Analysts</a></li>
-            <li class="nav-item"><a class="nav-link" href="charles_minard.html">Charles Minard</a></li>
-            <li class="nav-item"><a class="nav-link" href="big_data.html">Big Data</a></li>
-            <li class="nav-item"><a class="nav-link" href="technology_evolution.html">Technology Evolution</a></li>
-            <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-          </ul>
-        </div>
-      </nav>
+<!-- Header -->
+<header id="header" class="bg-primary text-white">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Data Science</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="moduleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Modules
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
+                    <li><a class="dropdown-item" href="#" onclick="loadModule('module1')">1. Overview</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="loadModule('module2')">2. Graphs and Data</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="loadModule('module3')">3. Tableau</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="loadModule('module4')">4. Process</a></li>
+                  </ul>
+                </li>
+                <!-- Placeholder for dynamic links -->
+                <div id="dynamicLinks">
+                </div>
+              </ul>
+            </div>
+          </nav>      
+    </div>
+</header>
     <div class="container mt-5">
         <h1>Data Science Careers: An Overview</h1>
 
@@ -183,7 +198,8 @@
             </div>
         </div>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
         <script>
             function checkAnswers() {
                 let correctAnswers = 0;
