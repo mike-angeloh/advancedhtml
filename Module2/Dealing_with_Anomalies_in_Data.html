@@ -40,27 +40,31 @@
         <h1>Dealing with Anomalies in Data</h1>
     </div>
     <div class="container">
-        
-        <div class="my-4">
-            <h2>Introduction</h2>
-            <p>When analyzing data, you're often looking for patterns or trends that can inform your decisions. However, every so often, you might come across data points that seem out of place. These are known as anomalies, and how you deal with them can significantly impact your analysis.</p>
+
+      <div class="my-4">
+          <h2>Introduction</h2>
+          <p>Imagine you're looking at a picture of a beautiful garden. Most of the flowers are blue, but there's one bright red flower in the middle. That red flower stands out, right? In the world of data, this "stand-out" point is called an anomaly. When we look at numbers and data, these anomalies can tell us something interesting or hint that something might be wrong.</p>
+      </div>
+  
+      <div class="my-4">
+          <h2>Types of Anomalies</h2>
+          <p>There are different ways something can stand out in a dataset:
+              <ul>
+                  <li><strong>Point anomalies</strong>: Like finding a single red apple in a basket of green ones. It's just one odd data point.</li>
+                  <li><strong>Contextual anomalies</strong>: Imagine you wear a heavy jacket in July. It's weird because July is usually hot, but wearing that jacket in December would be normal. So, the context matters!</li>
+                  <li><strong>Collective anomalies</strong>: Think of a team where everyone is great individually, but they just can't win when they play together. Each player is fine by themselves, but as a group, something's off.</li>
+              </ul>
+          </p>
+      </div>
+  
+      <div class="my-4">
+          <h2>Handling Anomalies</h2>
+          <p>When we spot these stand-out points, we can't just ignore them. We need to figure out why they're there. Sometimes they're just a fluke, like a rare rainbow-colored butterfly. But other times, they might mean there's a problem, like a leaky faucet causing a water puddle. Deciding what to do depends on what we're looking at and why we think the anomaly happened.</p>
+          <p>Ready for a challenge? Below is a chart showing how much a make-believe company sold each month. Can you spot any strange or unexpected sales numbers? What do you think might have caused them? Play detective and try to figure it out!</p>
+          <iframe src="output_plot.html" width="100%" height="500px"></iframe>
         </div>
-        
-        <div class="my-4">
-            <h2>Types of Anomalies</h2>
-            <p>Point anomalies are single instances that deviate significantly from the rest of your data. Contextual anomalies are only unusual within a specific context. Collective anomalies are a collection of data points that collectively deviate from the entire dataset but may not be anomalies when considered individually.</p>
-        </div>
-        
-        <div class="my-4">
-            <h2>Handling Anomalies</h2>
-            <p>Various statistical and machine learning techniques can help you identify anomalies. Once identified, they should not be ignored. They can be an accepted risk, or perhaps indicative of an error or fraud. The treatment varies based on the context and the potential impact on your analysis.</p>
-        </div>
-        
-        <div class="my-4">
-            <h2>Interactive Component</h2>
-            <p>Here's an interactive scatter plot of a fictional company's monthly sales. Identify the anomalies and decide how you would treat them. Would you investigate further, or consider them as an accepted risk?</p>
-        </div>
-        
+  
+  </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
