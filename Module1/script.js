@@ -9,7 +9,6 @@ function loadModule(module) {
           <li class="nav-item"><a class="nav-link" href="pioneers.html">Early Pioneers</a></li>
           <li class="nav-item"><a class="nav-link" href="early_analysis.html">Role of Early Analysis</a></li>
           <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-          <li class="nav-item"><a class="nav-link" href="skills_for_analysts.html">Skills for Analysts</a></li>
           <li class="nav-item"><a class="nav-link" href="modern_data_collection.html">Modern Data Collection</a></li>
            <li class="nav-item"><a class="nav-link" href="big_data.html">Big Data</a></li>
           <li class="nav-item"><a class="nav-link" href="technology_evolution.html">Technology Evolution</a></li>
