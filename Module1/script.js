@@ -5,7 +5,6 @@ function loadModule(module) {
     switch(module) {
       case 'module1':
         links = `
-          <li class="nav-item"><a class="nav-link" href="introduction.html">Introduction</a></li>
           <li class="nav-item"><a class="nav-link" href="pioneers.html">Early Pioneers</a></li>
           <li class="nav-item"><a class="nav-link" href="early_analysis.html">Role of Early Analysis</a></li>
           <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
